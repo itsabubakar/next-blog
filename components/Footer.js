@@ -2,11 +2,17 @@ import Link from "next/link"
 import {ImFacebook} from 'react-icons/im'
 import {ImTwitter} from 'react-icons/im'
 import {ImYoutube} from 'react-icons/im'
-
+import Newsletter from "./_child/Newsletter"
 
 const Footer = () => {
+  const bg = {
+    backgroundImage: "url('/images/footer.png')",
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom left'
+  }
   return (
-    <footer className="bg-grey-50">
+    <footer className="bg-grey-50" style={bg}>
+      <Newsletter />
       <div className="container mx-auto flex justify-center py-12">
         <div className="py-5 justify-center">
           
